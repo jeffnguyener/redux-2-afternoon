@@ -36,7 +36,8 @@ class Budget extends Component {
 
 function mapStateToProps(reduxState) {
   return {
-    budget: reduxState.budget
+    budget: reduxState.budget,
+    user: reduxState.user
   }
 }
 

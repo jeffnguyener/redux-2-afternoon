@@ -13,5 +13,11 @@ export const requestUserData = () => {
 }
 
 export default function (state = initialState, action){
-    return state;
+    switch(action.type){
+        case REQUEST_USER_DATA + '_FULFILLED':
+            const { email, firstName, lastName } = action.payload.user
+            return { email, firstName, lastName }
+        default: 
+        return state;
+    }
 }
