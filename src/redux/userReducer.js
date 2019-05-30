@@ -18,6 +18,6 @@ export default function (state = initialState, action){
             const { email, firstName, lastName } = action.payload.user
             return { email, firstName, lastName }
         default: 
-        return state;
+            return state;
     }
 }
